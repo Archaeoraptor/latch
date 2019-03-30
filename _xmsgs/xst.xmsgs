@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">F:/eelab/latch_test/latchtop.vhf</arg>&quot; line <arg fmt="%d" index="2">60</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">numout1</arg>&apos; of component &apos;<arg fmt="%s" index="4">latch</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">F:/eelab/latch_test/latchtop.vhf</arg>&quot; line <arg fmt="%d" index="2">60</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">numout2</arg>&apos; of component &apos;<arg fmt="%s" index="4">latch</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">F:/eelab/latch_test/latchtop.vhf</arg>&quot; line <arg fmt="%d" index="2">60</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">numout3</arg>&apos; of component &apos;<arg fmt="%s" index="4">latch</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">F:/eelab/latch_test/latchtop.vhf</arg>&quot; line <arg fmt="%d" index="2">60</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">numout4</arg>&apos; of component &apos;<arg fmt="%s" index="4">latch</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">F:/eelab/latch_test/latchtop.vhf</arg>&quot; line <arg fmt="%d" index="2">60</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">numout5</arg>&apos; of component &apos;<arg fmt="%s" index="4">latch</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">F:/eelab/latch_test/latchtop.vhf</arg>&quot; line <arg fmt="%d" index="2">60</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">numout6</arg>&apos; of component &apos;<arg fmt="%s" index="4">latch</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_1_numin6_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_1_numin5_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_1_numin4_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_1_numin3_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_1_numin2_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_1_numin1_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">numout1_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">latch</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">23 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;numout1_1&gt; &lt;numout1_2&gt; &lt;numout1_3&gt; &lt;numout2_0&gt; &lt;numout2_1&gt; &lt;numout2_2&gt; &lt;numout2_3&gt; &lt;numout3_0&gt; &lt;numout3_1&gt; &lt;numout3_2&gt; &lt;numout3_3&gt; &lt;numout4_0&gt; &lt;numout4_1&gt; &lt;numout4_2&gt; &lt;numout4_3&gt; &lt;numout5_0&gt; &lt;numout5_1&gt; &lt;numout5_2&gt; &lt;numout5_3&gt; &lt;numout6_0&gt; &lt;numout6_1&gt; &lt;numout6_2&gt; &lt;numout6_3&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">numout1_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">latch</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+</messages>
+

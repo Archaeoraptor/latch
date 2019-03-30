@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# PlanAhead v13.4 (64-bit)
+# Build 157570 by hdbuild on Fri Dec 16 13:06:31 MST 2011
+# Start of session at: Sat Mar 30 15:39:22 2019
+# Process ID: 3904
+# Log file: F:/eelab/latch_test/planAhead_run_1/planAhead.log
+# Journal file: F:/eelab/latch_test/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source F:/eelab/latch_test/pa.fromNetlist.tcl
+exit
+stop_gui

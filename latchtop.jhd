@@ -1,0 +1,3 @@
+MODULE latchtop
+	SUBMODULE latch
+		INSTANCE XLXI_1

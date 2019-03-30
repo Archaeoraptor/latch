@@ -1,0 +1,12 @@
+V3 8
+FL F:/eelab/latch_test/latch.vhd 2019/03/30.10:44:11 O.87xd
+EN work/latch 1553931521 FL F:/eelab/latch_test/latch.vhd PB ieee/std_logic_1164 1325952872 \
+      PB ieee/std_logic_arith 1325952873 PB ieee/STD_LOGIC_UNSIGNED 1325952875
+AR work/latch/Behavioral 1553931522 \
+      FL F:/eelab/latch_test/latch.vhd EN work/latch 1553931521
+FL F:/eelab/latch_test/latchtop.vhf 2019/03/30.15:37:18 O.87xd
+EN work/latchtop 1553931523 FL F:/eelab/latch_test/latchtop.vhf \
+      PB ieee/std_logic_1164 1325952872 PB ieee/NUMERIC_STD 1325952877 LB UNISIM \
+      PH unisim/VCOMPONENTS 1325952880
+AR work/latchtop/BEHAVIORAL 1553931524 \
+      FL F:/eelab/latch_test/latchtop.vhf EN work/latchtop 1553931523 CP latch
