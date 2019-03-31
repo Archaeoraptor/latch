@@ -1,0 +1,8 @@
+[Inputs]
+clkin
+[Outputs]
+clkout1
+clkout10
+clkout100
+clkout1k
+[BiDir]

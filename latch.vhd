@@ -31,21 +31,10 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity latch is
-	port(latchin:in std_logic;
-			overin:in std_logic;
-			numin1: in std_logic_vector(3 downto 0);
-			numin2: in std_logic_vector(3 downto 0);
-			numin3: in std_logic_vector(3 downto 0);
-			numin4: in std_logic_vector(3 downto 0);
-			numin5: in std_logic_vector(3 downto 0);
-			numin6: in std_logic_vector(3 downto 0);
-			overout: out std_logic;
-			numout1: out std_logic_vector(3 downto 0);
-			numout2: out std_logic_vector(3 downto 0);
-			numout3: out std_logic_vector(3 downto 0);
-			numout4: out std_logic_vector(3 downto 0);
-			numout5: out std_logic_vector(3 downto 0);
-			numout6: out std_logic_vector(3 downto 0));
+	port(latchin,overin:in std_logic;
+			numin1,numin2,numin3,numin4,numin5,numin6: in std_logic_vector(3 downto 0);
+			overout:out std_logic;
+			numout1,numout2,numout3,numout4,numout5,numout6: out std_logic_vector(3 downto 0));
 end latch;
 
 architecture Behavioral of latch is
@@ -59,9 +48,7 @@ begin
 		numout4 <= numin4;
 		numout5 <= numin5;
 		numout6 <= numin6;
-
-
-	end if;
+	end if;   
 end process;
 
 end Behavioral;

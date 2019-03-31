@@ -1,1 +1,2 @@
-work	"latch.vhd"
+work	"Fdiv3.vhd"
+work	"fdiv.vhd"

@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-03-30T15:41:03</DateModified>
+  <DateModified>2019-03-31T12:23:49</DateModified>
   <ModuleName>latchtop</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2019-03-31T12:22:34</SummaryTimeStamp>
   <SavedFilePath>F:/eelab/latch_test/iseconfig/latchtop.xreport</SavedFilePath>
   <ImplementationReportsDirectory>F:/eelab/latch_test\</ImplementationReportsDirectory>
   <DateInitialized>2019-03-30T11:02:08</DateInitialized>

@@ -1,0 +1,24 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "s1" LOC = P6;
+NET "s10" LOC = P141;
+NET "s100" LOC = P136;
+NET "clk" LOC = P129;
+NET "dig[0]" LOC = P81;
+NET "dig[1]" LOC = P85;
+NET "dig[2]" LOC = P83;
+NET "dig[3]" LOC = P82;
+NET "dig[4]" LOC = P43;
+NET "dig[5]" LOC = P74;
+NET "dig[6]" LOC = P59;
+NET "dig[7]" LOC = P51;
+NET "seg[0]" LOC = P52;
+NET "seg[1]" LOC = P75;
+NET "seg[2]" LOC = P58;
+NET "seg[3]" LOC = P76;
+NET "seg[4]" LOC = P77;
+NET "seg[5]" LOC = P54;
+NET "seg[6]" LOC = P53;
+NET "seg[7]" LOC = P66;
+NET "clksignal" LOC = P56;

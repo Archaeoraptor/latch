@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=F:\eelab\latch_test\latchtop.ncd
+OUTFILE=F:\eelab\latch_test\latchtop.bit
+FAMILY=Spartan3E
+PART=xc3s250e-5tq144
+WORKINGDIR=F:\eelab\latch_test
+LICENSE=WebPack
+USER_INFO=__0_0_0

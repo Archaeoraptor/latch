@@ -1,0 +1,10 @@
+vhdtdtfi -lib work Fdiv3.vhd -prj latch_test -o Fdiv3.spl -module Fdiv3 -template C:/Xilinx/13.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work fdiv.vhd -lib work Fdiv3.vhd -prj latch_test -o Fdiv3.spl -module Fdiv3 -template C:/Xilinx/13.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Fdiv3.spl F:/eelab/latch_test/Fdiv3.sym 
+vhdtdtfi -lib work fdiv.vhd -lib work Fdiv3.vhd -prj latch_test -o Fdiv3.spl -module Fdiv3 -template C:/Xilinx/13.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Fdiv3.spl F:/eelab/latch_test/Fdiv3.sym 
+vhdtdtfi -prj latch_test -o F:/eelab/latch_test/Fdiv3.vhi -module Fdiv3 -template C:/Xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work fdiv.vhd -lib work Fdiv3.vhd 
+vhdtdtfi -lib work fdiv.vhd -lib work Fdiv3.vhd -prj latch_test -o Fdiv3.spl -module Fdiv3 -template C:/Xilinx/13.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Fdiv3.spl F:/eelab/latch_test/Fdiv3.sym 
+vhdtdtfi -lib work fdiv.vhd -lib work Fdiv3.vhd -prj latch_test -o Fdiv3.spl -module Fdiv3 -template C:/Xilinx/13.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Fdiv3.spl F:/eelab/latch_test/Fdiv3.sym 

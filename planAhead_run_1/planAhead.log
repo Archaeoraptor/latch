@@ -1,8 +1,8 @@
 #-----------------------------------------------------------
 # PlanAhead v13.4 (64-bit)
 # Build 157570 by hdbuild on Fri Dec 16 13:06:31 MST 2011
-# Start of session at: Sat Mar 30 15:39:22 2019
-# Process ID: 3904
+# Start of session at: Sun Mar 31 09:58:54 2019
+# Process ID: 2684
 # Log file: F:/eelab/latch_test/planAhead_run_1/planAhead.log
 # Journal file: F:/eelab/latch_test/planAhead_run_1/planAhead.jou
 #-----------------------------------------------------------
@@ -12,7 +12,7 @@ INFO: [Device-25] Loading parts and site information from C:/Xilinx/13.4/ISE_DS/
 Finished parsing RTL primitives file [C:/Xilinx/13.4/ISE_DS/PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
 start_gui
 source F:/eelab/latch_test/pa.fromNetlist.tcl
-# create_project -name latch_test -dir "F:/eelab/latch_test/planAhead_run_1" -part xc3s250etq144-5
+# create_project -name latch_test -dir "F:/eelab/latch_test/planAhead_run_2" -part xc3s250etq144-5
 Parsing template File [C:/Xilinx/13.4/ISE_DS/ISE\data\projnav\templates\verilog.xml].
 Finished parsing template File [C:/Xilinx/13.4/ISE_DS/ISE\data\projnav\templates\verilog.xml].
 Parsing template File [C:/Xilinx/13.4/ISE_DS/ISE\data\projnav\templates\vhdl.xml].
@@ -39,10 +39,10 @@ Processing design ...
    Preping design's macros ...
   finished :Prep
 Writing EDIF netlist file latchtop.edif ...
-ngc2edif: Total memory usage is 81892 kilobytes
+ngc2edif: Total memory usage is 82148 kilobytes
 
-Parsing EDIF File [.\planAhead_run_1\latch_test.data\cache\latchtop_ngc_68375b08.edif]
-Finished Parsing EDIF File [.\planAhead_run_1\latch_test.data\cache\latchtop_ngc_68375b08.edif]
+Parsing EDIF File [.\planAhead_run_2\latch_test.data\cache\latchtop_ngc_68375b08.edif]
+Finished Parsing EDIF File [.\planAhead_run_2\latch_test.data\cache\latchtop_ngc_68375b08.edif]
 INFO: [PlanAhead-430] Reading macro library C:/Xilinx/13.4/ISE_DS/PlanAhead\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
 Parsing EDIF File [C:/Xilinx/13.4/ISE_DS/PlanAhead\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
 Finished Parsing EDIF File [C:/Xilinx/13.4/ISE_DS/PlanAhead\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
@@ -57,9 +57,8 @@ INFO: [Timing-34] Done reading timing library C:/Xilinx/13.4/ISE_DS/PlanAhead\pa
 Parsing UCF File [F:\eelab\latch_test\latchtop.ucf]
 Finished Parsing UCF File [F:\eelab\latch_test\latchtop.ucf]
 INFO: [PlanAhead-566] Unisim Transformation Summary:
-  A total of 1 instances were transformed.
-  BUFGP => BUFGP (HD_IBUFG, HD_BUFG): 1 instances
-open_netlist_design: Time (s): 5.167w.  Memory (MB): 648.699p 105.688g
+  A total of 2 instances were transformed.
+  BUFGP => BUFGP (HD_IBUFG, HD_BUFG): 2 instances
 exit
 stop_gui
 INFO: [PlanAhead-261] Exiting PlanAhead...

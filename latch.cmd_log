@@ -11,3 +11,9 @@ xst -intstyle ise -ifn "F:/eelab/latch_test/latch.xst" -ofn "F:/eelab/latch_test
 xst -intstyle ise -ifn "F:/eelab/latch_test/latch.xst" -ofn "F:/eelab/latch_test/latch.syr" 
 vhdtdtfi -lib work latch.vhd -prj latch_test -o latch.spl -module latch -template C:/Xilinx/13.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
 spl2sym -intstyle ise -family spartan3e latch.spl F:/eelab/latch_test/latch.sym 
+vhdtdtfi -lib work latch.vhd -prj latch_test -o latch.spl -module latch -template C:/Xilinx/13.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e latch.spl F:/eelab/latch_test/latch.sym 
+vhdtdtfi -lib work latch.vhd -prj latch_test -o latch.spl -module latch -template C:/Xilinx/13.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e latch.spl F:/eelab/latch_test/latch.sym 
+vhdtdtfi -prj latch_test -o F:/eelab/latch_test/latch.vhi -module latch -template C:/Xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work latch.vhd 
+vhdtdtfi -prj latch_test -o F:/eelab/latch_test/latch.vhi -module latch -template C:/Xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work latch.vhd 

@@ -1,0 +1,16 @@
+[Inputs]
+f1khz
+q_over
+dp1
+dp2
+dp3
+=fre0[3:0]=
+=fre1[3:0]=
+=fre2[3:0]=
+=fre3[3:0]=
+=fre4[3:0]=
+=fre5[3:0]=
+[Outputs]
+=seg[7:0]=
+=diq[7:0]=
+[BiDir]

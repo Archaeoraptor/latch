@@ -4,8 +4,8 @@
 	<FileSet Name="sources_1"
 			Type="DesignSrcs"
 			RelSrcDir="$PSRCDIR/sources_1">
-		<Filter Type="Srcs"/>
-		<File Path="$PPRDIR/../latch.vhd">
+		<Filter Type="EDIFSrcs"/>
+		<File Path="$PPRDIR/../latchtop.ngc">
 			<FileInfo>
 				<Attr Name="UsedInSynthesis"
 						Val="1"/>
@@ -15,7 +15,7 @@
 						Val="1"/>
 			</FileInfo>
 		</File>
-		<File Path="$PPRDIR/../latchtop.vhf">
+		<File Path="$PPRDIR/../latch.ngc">
 			<FileInfo>
 				<Attr Name="UsedInSynthesis"
 						Val="1"/>
@@ -27,17 +27,13 @@
 		</File>
 		<Config>
 			<Option Name="DesignMode"
-					Val="RTL"/>
+					Val="GateLvl"/>
+			<Option Name="GateLvlMode"
+					Val="EDIF"/>
 			<Option Name="TopModule"
 					Val="latchtop"/>
-			<Option Name="TopLib"
-					Val="work"/>
-			<Option Name="TopArchitecture"
-					Val="BEHAVIORAL"/>
-			<Option Name="TopRTLFile"
-					Val="$PPRDIR/../latchtop.vhf"/>
-			<Option Name="TopAutoSet"
-					Val="TRUE"/>
+			<Option Name="TopFile"
+					Val="$PPRDIR/../latchtop.ngc"/>
 		</Config>
 	</FileSet>
 </DARoots>

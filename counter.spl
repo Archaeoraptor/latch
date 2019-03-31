@@ -1,0 +1,8 @@
+[Inputs]
+rst
+clk
+carry_in
+[Outputs]
+carry_out
+=count_out[3:0]=
+[BiDir]

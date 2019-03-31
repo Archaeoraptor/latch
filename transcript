@@ -17,7 +17,7 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 15:32:46 on Mar 30,2019
+# Start time: 12:22:33 on Mar 31,2019
 # vcom -reportprogress 300 -explicit -93 latch.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -26,10 +26,10 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity latch
 # -- Compiling architecture Behavioral of latch
-# End time: 15:32:46 on Mar 30,2019, Elapsed time: 0:00:00
+# End time: 12:22:33 on Mar 31,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 15:32:46 on Mar 30,2019
+# Start time: 12:22:33 on Mar 31,2019
 # vcom -reportprogress 300 -explicit -93 test_latch.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -42,10 +42,10 @@
 # ** Warning: test_latch.vhd(119): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # ** Warning: test_latch.vhd(120): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # ** Warning: test_latch.vhd(121): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 15:32:47 on Mar 30,2019, Elapsed time: 0:00:01
+# End time: 12:22:34 on Mar 31,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 6
 # vsim -gui -do "do {test_latch.fdo}" 
-# Start time: 15:32:47 on Mar 30,2019
+# Start time: 12:22:34 on Mar 31,2019
 # ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # 
 # Loading std.standard
@@ -55,8 +55,17 @@
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
 # Loading work.latch(behavioral)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Administrator  Hostname: WIN-A331-24  ProcessID: 3312
+# 
+#           Attempting to use alternate WLF file "./wlftt3nick".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftt3nick
+# 
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# End time: 15:47:57 on Mar 30,2019, Elapsed time: 0:15:10
-# Errors: 0, Warnings: 1
+# End time: 12:23:35 on Mar 31,2019, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 3

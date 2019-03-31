@@ -1,0 +1,6 @@
+vhdtdtfi -lib work fdiv.vhd -prj latch_test -o fdiv.spl -module fdiv -template C:/Xilinx/13.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e fdiv.spl F:/eelab/latch_test/fdiv.sym 
+vhdtdtfi -lib work fdiv.vhd -prj latch_test -o fdiv.spl -module fdiv -template C:/Xilinx/13.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e fdiv.spl F:/eelab/latch_test/fdiv.sym 
+vhdtdtfi -prj latch_test -o F:/eelab/latch_test/fdiv.vhi -module fdiv -template C:/Xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work fdiv.vhd 
+vhdtdtfi -prj latch_test -o F:/eelab/latch_test/fdiv.vhi -module fdiv -template C:/Xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work fdiv.vhd 

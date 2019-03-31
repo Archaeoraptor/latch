@@ -1,0 +1,6 @@
+vhdtdtfi -lib work mutli.vhd -prj latch_test -o multi.spl -module multi -template C:/Xilinx/13.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e multi.spl F:/eelab/latch_test/multi.sym 
+vhdtdtfi -lib work mutli.vhd -prj latch_test -o multi.spl -module multi -template C:/Xilinx/13.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e multi.spl F:/eelab/latch_test/multi.sym 
+vhdtdtfi -prj latch_test -o F:/eelab/latch_test/multi.vhi -module multi -template C:/Xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mutli.vhd 
+vhdtdtfi -prj latch_test -o F:/eelab/latch_test/multi.vhi -module multi -template C:/Xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mutli.vhd 
