@@ -4,7 +4,7 @@
 NET "s1" LOC = P6;
 NET "s10" LOC = P141;
 NET "s100" LOC = P136;
-NET "clk" LOC = P129;
+NET "clk" LOC = P128;
 NET "dig[0]" LOC = P81;
 NET "dig[1]" LOC = P85;
 NET "dig[2]" LOC = P83;

@@ -1,5 +1,5 @@
 
--- VHDL Instantiation Created from source file multi.vhd -- 11:57:37 03/31/2019
+-- VHDL Instantiation Created from source file multi.vhd -- 20:08:09 03/31/2019
 --
 -- Notes: 
 -- 1) This instantiation template has been automatically generated using types
@@ -13,14 +13,14 @@
 		dp1 : IN std_logic;
 		dp2 : IN std_logic;
 		dp3 : IN std_logic;
-		fre0 : IN std_logic_vector(3 downto 0);
 		fre1 : IN std_logic_vector(3 downto 0);
 		fre2 : IN std_logic_vector(3 downto 0);
 		fre3 : IN std_logic_vector(3 downto 0);
 		fre4 : IN std_logic_vector(3 downto 0);
-		fre5 : IN std_logic_vector(3 downto 0);          
+		fre5 : IN std_logic_vector(3 downto 0);
+		fre6 : IN std_logic_vector(3 downto 0);          
 		seg : OUT std_logic_vector(7 downto 0);
-		diq : OUT std_logic_vector(7 downto 0)
+		dig : OUT std_logic_vector(7 downto 0)
 		);
 	END COMPONENT;
 
@@ -30,14 +30,14 @@
 		dp1 => ,
 		dp2 => ,
 		dp3 => ,
-		fre0 => ,
 		fre1 => ,
 		fre2 => ,
 		fre3 => ,
 		fre4 => ,
 		fre5 => ,
+		fre6 => ,
 		seg => ,
-		diq => 
+		dig => 
 	);
 
 

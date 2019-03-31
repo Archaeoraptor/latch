@@ -32,112 +32,218 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity multi is
-       port(f1khz,q_over,dp1,dp2,dp3	:	in	std_logic;
-	    fre0,fre1,fre2,fre3,fre4,fre5	:	in	std_logic_vector(3 downto 0);
-		 seg,diq  :  out  std_logic_vector(7 downto 0));
+ port(f1khz,q_over,dp1,dp2,dp3:in std_logic;
+      fre1,fre2,fre3,fre4,fre5,fre6:in std_logic_vector(3 downto 0);
+		seg: out std_logic_vector(7 downto 0);
+		dig: out std_logic_vector(7 downto 0));
 end multi;
-architecture Behavioral of multi is
-	signal sel:	std_logic_vector(2 downto 0):="000";
-	signal hide:std_logic; 
-	signal data:std_logic_vector(3 downto 0);
-	signal led:	std_logic_vector(6 downto 0);	
-	signal divm,diqm: std_logic_vector(7 downto 0);
-begin
-	scan : process (f1khz)
-   		begin
-      		if rising_edge(f1khz) then
-	 			if sel  = "101" then
-	    			sel <= "000";
-	 			else
-	    			sel <= sel + 1;
-	 			end if;
-      		end if;
-   		end process;
-	mux:process(sel,fre0,fre1,fre2,fre3,fre4,fre5)
-   		begin
-      	case sel is
-	 		when "000" =>	data <= fre0;
-	 		when "001" =>	data <= fre1;
-	 		when "010" =>	data <= fre2;
-	 		when "011" =>	data <= fre3;
-	 		when "100" =>	data <= fre4;
-	 		when others =>	data <= fre5;
-      	end case;
-   		end process;
-	bcd2led : process (hide,data)
-   	begin
-      led <= "1111111";
-      	if hide /= '1' then
-	 		case data is
-	    		when "0000" =>  led <= "1000000";	
-	    		when "0001" =>  led <= "1111001";	
-	    		when "0010" =>  led <= "0100100";	
-	    		when "0011" =>  led <= "0110000";	
-	    		when "0100" =>  led <= "0011001";	
-	    		when "0101" =>  led <= "0010010";	
-	    		when "0110" =>  led <= "0000010";	
-	    		when "0111" =>  led <= "1111000";	
-	    		when "1000" =>  led <= "0000000";
-	    		when "1001" =>  led <= "0010000";
-	    		when others =>  led <= "0111111";
-	 		end case;
-      	end if;
-   	end process;	
-	dp_decode:process(dp1,dp2,dp3)
-   begin
-    if (dp3='0' and dp2='0' and dp1='1') then
-		diqm<="11110111";
-	 elsif (dp3='0' and dp2='1' and dp1='0') then	
-      diqm<="11111011";
-	 elsif (dp3='1' and dp2='0' and dp1='0') then
-      diqm<="11111101";
-    end if; 	
-	end process;
-	sela:process(sel,divm)
-    begin
-   case sel is
-			when "000"=>divm<="11111110";
-			when "001"=>divm<="11111101";
-			when "010"=>divm<="11111011";
-			when "011"=>divm<="11110111";
-			when "100"=>divm<="11101111";
-			when "101"=>divm<="11011111";
-			when others =>  null;
-	end case;
-   diq<=divm;
-	end process;
-   output:process(divm,diqm,led)	
-    begin
-   if divm=diqm then
-    seg<='0'&led;
-     else
-     seg<='1'&led;
-     end if;
-    end process;	
-   	hide_zero:process (sel,q_over,dp1,dp2,fre5,fre4,fre3,fre2)
-   		begin
-      	hide <= '0';
-      	case sel is
-			when "101" =>
-	    		if q_over = '0' and fre5 = "0000"then 
-					hide <= '1';
-	    		end if;
-			when "100" =>
-	    		if q_over = '0' and fre5 = "0000"and fre4 = "0000"then 
-					hide <= '1';
-	    		end if;
-			when "011" =>
-	    		if q_over = '0' and fre5 = "0000" and fre4 = "0000" and fre3 = "0000" and dp1 /= '1' then
-					hide <= '1';
-	    		end if;
-			when "010" =>
-	    		if q_over = '0' and fre5 = "0000" and fre4 = "0000" and fre3 = "0000" and fre2 = "0000" and dp1 /= '1' and dp2 /= '1' then
-					hide <= '1';
-	    		end if;
-			when others =>
-	    		null;
-      	end case;
-   		end process;
-end Behavioral;
 
+architecture Behavioral of multi is
+signal seg_r:STD_LOGIC_VECTOR(7 DOWNTO 0);
+signal dig_r:STD_LOGIC_VECTOR(7 DOWNTO 0);
+signal fre_data: STD_LOGIC_VECTOR(3 DOWNTO 0);
+signal count: std_logic_vector(2 downto 0);
+begin
+   process(f1khz)is
+	 begin
+	   if rising_edge(f1khz) then
+			count<=count+1;
+      end if;
+      
+   end process;
+
+   process(f1khz,dp1,dp2,dp3,count)is
+    begin
+--      if (f1khz'event and f1khz='1')then
+		if rising_edge(f1khz) then
+			case count is
+				when "000"=>  fre_data<=fre1;
+				when "001"=>  fre_data<=fre2;
+				when "010"=>  fre_data<=fre3;
+				when "011"=>  fre_data<=fre4;
+				when "100"=>  fre_data<=fre5;
+				when "101"=>  fre_data<=fre6;	
+				when others=> fre_data<="0000";
+			end case;
+       
+			if(fre6="0000")then
+				if(fre5="0000") then
+					if(fre4="0000")then
+						if(dp2='1')then
+							case count is 
+								when "000"=>  dig_r<="11111110";
+								when "001"=>  dig_r<="11111101";
+								when "010"=>  dig_r<="11111011";
+								when "011"=>  dig_r<="11111111";
+								when "100"=>  dig_r<="11111111";
+								when "101"=>  dig_r<="11111111";	
+								when others=> dig_r<="11111111";
+							end case;
+						elsif( dp3='1')then
+							if(fre3="0000")then
+								case count is 
+									when "000"=>  dig_r<="11111110";
+									when "001"=>  dig_r<="11111101";
+									when "010"=>  dig_r<="11111111";
+									when "011"=>  dig_r<="11111111";
+									when "100"=>  dig_r<="11111111";
+									when "101"=>  dig_r<="11111111";	
+									when others=> dig_r<="11111111";
+								end case;
+					
+						elsif( dp1='1')then
+							case count is 
+								when "000"=>  dig_r<="11111110";
+								when "001"=>  dig_r<="11111101";
+								when "010"=>  dig_r<="11111011";
+								when "011"=>  dig_r<="11111111";
+								when "100"=>  dig_r<="11111111";
+								when "101"=>  dig_r<="11111111";	
+								when others=> dig_r<="11111111";
+							end case;
+						else
+							case count is 
+								when "000"=>  dig_r<="11111110";
+								when "001"=>  dig_r<="11111101";
+								when "010"=>  dig_r<="11111011";
+								when "011"=>  dig_r<="11110111";
+								when "100"=>  dig_r<="11101111";
+								when "101"=>  dig_r<="11011111";
+								when "111"=>  dig_r<="11011111";
+								when others=> dig_r<="01111111";
+							end case;
+						end if;
+					else
+						case count is 
+							when "000"=>  dig_r<="11111110";
+							when "001"=>  dig_r<="11111101";
+							when "010"=>  dig_r<="11111011";
+							when "011"=>  dig_r<="11110111";
+							when "100"=>  dig_r<="11111111";
+							when "101"=>  dig_r<="11111111";	
+							when others=> dig_r<="11111111";
+						end case; 
+					end if;
+			 else
+				case count is 
+					when "000"=>  dig_r<="11111110";
+					when "001"=>  dig_r<="11111101";
+					when "010"=>  dig_r<="11111011";
+					when "011"=>  dig_r<="11110111";
+					when "100"=>  dig_r<="11111111";
+					when "101"=>  dig_r<="11111111";	
+					when others=> dig_r<="11111111";
+				end case;
+			 end if;
+         	
+         else
+          case count is 
+				when "000"=>  dig_r<="11111110";
+				when "001"=>  dig_r<="11111101";
+				when "010"=>  dig_r<="11111011";
+				when "011"=>  dig_r<="11110111";
+				when "100"=>  dig_r<="11101111";
+				when "101"=>  dig_r<="11111111";	
+				when others=> dig_r<="11111111";
+          end case;
+         end if;
+     
+       else
+          case count is 
+				when "000"=>  dig_r<="11111110";
+				when "001"=>  dig_r<="11111101";
+				when "010"=>  dig_r<="11111011";
+				when "011"=>  dig_r<="11110111";
+				when "100"=>  dig_r<="11101111";
+				when "101"=>  dig_r<="11011111";	
+				when others=> dig_r<="11111111";
+          end case;
+       end if;	
+   end if;		 
+	end process;
+	
+	process(fre_data,q_over,dp1,dp2,dp3,count)is
+	  begin	
+     if q_over='0' then
+		  if dp1='1' then
+				case count is
+					when "000"=>  seg_r(7)<='1';
+					when "001"=>  seg_r(7)<='1';
+					when "010"=>  seg_r(7)<='1';
+					when "011"=>  seg_r(7)<='1';
+					when "100"=>  seg_r(7)<='0';
+					when "101"=>  seg_r(7)<='1';
+					when others=> seg_r(7)<='1';
+				end case;
+				case fre_data is
+					when "0000"=>  seg_r(6 downto 0)<="1000000" ;			
+					when "0001"=>  seg_r(6 downto 0)<="1111001" ;
+					when "0010"=>  seg_r(6 downto 0)<="0100100" ;
+					when "0011"=>  seg_r(6 downto 0)<="0110000" ;
+					when "0100"=>  seg_r(6 downto 0)<="0011001" ;
+					when "0101"=>  seg_r(6 downto 0)<="0010010" ;
+					when "0110"=>  seg_r(6 downto 0)<="0000010" ;
+					when "0111"=>  seg_r(6 downto 0)<="1111000" ;
+					when "1000"=>  seg_r(6 downto 0)<="0000000" ;
+					when "1001"=>  seg_r(6 downto 0)<="0010000" ;
+					when others=>  seg_r(6 downto 0)<="1111111" ;
+				end case;
+		   
+		  
+		  elsif dp2='1' then
+				case count is
+					when "000"=>  seg_r(7)<='1';
+					when "001"=>  seg_r(7)<='1';
+					when "010"=>  seg_r(7)<='1';
+					when "011"=>  seg_r(7)<='0';
+					when "100"=>  seg_r(7)<='1';
+					when "101"=>  seg_r(7)<='1';
+					when others=> seg_r(7)<='1';
+				end case;
+				case fre_data is
+					when "0000"=>  seg_r(6 downto 0)<="1000000" ;			
+					when "0001"=>  seg_r(6 downto 0)<="1111001" ;
+					when "0010"=>  seg_r(6 downto 0)<="0100100" ;
+					when "0011"=>  seg_r(6 downto 0)<="0110000" ;
+					when "0100"=>  seg_r(6 downto 0)<="0011001" ;
+					when "0101"=>  seg_r(6 downto 0)<="0010010" ;
+					when "0110"=>  seg_r(6 downto 0)<="0000010" ;
+					when "0111"=>  seg_r(6 downto 0)<="1111000" ;
+					when "1000"=>  seg_r(6 downto 0)<="0000000" ;
+					when "1001"=>  seg_r(6 downto 0)<="0010000" ;
+					when others=>  seg_r(6 downto 0)<="1111111" ;
+				end case;
+		  elsif dp3='1' then
+				case count is
+					when "000"=>  seg_r(7)<='1';
+					when "001"=>  seg_r(7)<='1';
+					when "010"=>  seg_r(7)<='0';
+					when "011"=>  seg_r(7)<='1';
+					when "100"=>  seg_r(7)<='1';
+					when "101"=>  seg_r(7)<='1';
+					when others=> seg_r(7)<='1';
+				end case;
+				case fre_data is
+					when "0000"=>  seg_r(6 downto 0)<="1000000" ;			
+					when "0001"=>  seg_r(6 downto 0)<="1111001" ;
+					when "0010"=>  seg_r(6 downto 0)<="0100100" ;
+					when "0011"=>  seg_r(6 downto 0)<="0110000" ;
+					when "0100"=>  seg_r(6 downto 0)<="0011001" ;
+					when "0101"=>  seg_r(6 downto 0)<="0010010" ;
+					when "0110"=>  seg_r(6 downto 0)<="0000010" ;
+					when "0111"=>  seg_r(6 downto 0)<="1111000" ;
+					when "1000"=>  seg_r(6 downto 0)<="0000000" ;
+					when "1001"=>  seg_r(6 downto 0)<="0010000" ;
+					when others=>  seg_r(6 downto 0)<="1111111" ;
+				end case;
+		  else 
+			seg_r<=X"8e";
+		  end if;
+     else 
+	     seg_r<=X"00"; 
+     end if;	
+    end process;
+  dig<=dig_r;
+  seg<=seg_r;  
+end Behavioral;
 

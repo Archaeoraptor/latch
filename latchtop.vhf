@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 13.4
 --  \   \         Application : sch2hdl
 --  /   /         Filename : latchtop.vhf
--- /___/   /\     Timestamp : 03/31/2019 12:41:16
+-- /___/   /\     Timestamp : 03/31/2019 20:02:13
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -36,37 +36,31 @@ entity latchtop is
 end latchtop;
 
 architecture BEHAVIORAL of latchtop is
-   signal ltch                    : std_logic;
-   signal overout                 : std_logic;
-   signal XLXN_2                  : std_logic;
-   signal XLXN_3                  : std_logic;
-   signal XLXN_4                  : std_logic;
-   signal XLXN_6                  : std_logic;
-   signal XLXN_13                 : std_logic;
-   signal XLXN_14                 : std_logic_vector (3 downto 0);
-   signal XLXN_15                 : std_logic_vector (3 downto 0);
-   signal XLXN_16                 : std_logic_vector (3 downto 0);
-   signal XLXN_17                 : std_logic_vector (3 downto 0);
-   signal XLXN_18                 : std_logic_vector (3 downto 0);
-   signal XLXN_19                 : std_logic_vector (3 downto 0);
-   signal XLXN_29                 : std_logic;
-   signal XLXN_31                 : std_logic_vector (3 downto 0);
-   signal XLXN_42                 : std_logic_vector (3 downto 0);
-   signal XLXN_43                 : std_logic_vector (3 downto 0);
-   signal XLXN_44                 : std_logic_vector (3 downto 0);
-   signal XLXN_45                 : std_logic_vector (3 downto 0);
-   signal XLXN_46                 : std_logic_vector (3 downto 0);
-   signal XLXN_50                 : std_logic;
-   signal XLXN_51                 : std_logic;
-   signal XLXN_52                 : std_logic;
-   signal XLXN_53                 : std_logic;
-   signal XLXN_70                 : std_logic;
-   signal XLXI_10_fre0_openSignal : std_logic_vector (3 downto 0);
-   signal XLXI_10_fre1_openSignal : std_logic_vector (3 downto 0);
-   signal XLXI_10_fre2_openSignal : std_logic_vector (3 downto 0);
-   signal XLXI_10_fre3_openSignal : std_logic_vector (3 downto 0);
-   signal XLXI_10_fre4_openSignal : std_logic_vector (3 downto 0);
-   signal XLXI_10_fre5_openSignal : std_logic_vector (3 downto 0);
+   signal overout   : std_logic;
+   signal XLXN_2    : std_logic;
+   signal XLXN_3    : std_logic;
+   signal XLXN_4    : std_logic;
+   signal XLXN_6    : std_logic;
+   signal XLXN_13   : std_logic;
+   signal XLXN_14   : std_logic_vector (3 downto 0);
+   signal XLXN_15   : std_logic_vector (3 downto 0);
+   signal XLXN_16   : std_logic_vector (3 downto 0);
+   signal XLXN_17   : std_logic_vector (3 downto 0);
+   signal XLXN_18   : std_logic_vector (3 downto 0);
+   signal XLXN_19   : std_logic_vector (3 downto 0);
+   signal XLXN_29   : std_logic;
+   signal XLXN_31   : std_logic_vector (3 downto 0);
+   signal XLXN_43   : std_logic_vector (3 downto 0);
+   signal XLXN_44   : std_logic_vector (3 downto 0);
+   signal XLXN_45   : std_logic_vector (3 downto 0);
+   signal XLXN_46   : std_logic_vector (3 downto 0);
+   signal XLXN_50   : std_logic;
+   signal XLXN_51   : std_logic;
+   signal XLXN_52   : std_logic;
+   signal XLXN_70   : std_logic;
+   signal XLXN_193  : std_logic_vector (3 downto 0);
+   signal XLXN_225  : std_logic;
+   signal XLXN_226  : std_logic;
    component counter6
       port ( Csignal  : in    std_logic; 
              clear    : in    std_logic; 
@@ -132,19 +126,19 @@ architecture BEHAVIORAL of latchtop is
              dp1    : in    std_logic; 
              dp2    : in    std_logic; 
              dp3    : in    std_logic; 
-             seg    : out   std_logic_vector (7 downto 0); 
-             diq    : out   std_logic_vector (7 downto 0); 
-             fre0   : in    std_logic_vector (3 downto 0); 
              fre1   : in    std_logic_vector (3 downto 0); 
              fre2   : in    std_logic_vector (3 downto 0); 
              fre3   : in    std_logic_vector (3 downto 0); 
              fre4   : in    std_logic_vector (3 downto 0); 
-             fre5   : in    std_logic_vector (3 downto 0));
+             fre5   : in    std_logic_vector (3 downto 0); 
+             fre6   : in    std_logic_vector (3 downto 0); 
+             seg    : out   std_logic_vector (7 downto 0); 
+             dig    : out   std_logic_vector (7 downto 0));
    end component;
    
 begin
    Csignal : counter6
-      port map (clear=>XLXN_53,
+      port map (clear=>XLXN_225,
                 count_en=>XLXN_70,
                 Csignal=>CLKsignal,
                 over=>XLXN_13,
@@ -158,11 +152,11 @@ begin
    lch : control
       port map (bsignal=>XLXN_6,
                 gate=>XLXN_70,
-                latch=>ltch,
-                reset=>XLXN_53);
+                latch=>XLXN_226,
+                reset=>XLXN_225);
    
    XLXI_1 : latch
-      port map (latchin=>ltch,
+      port map (latchin=>XLXN_226,
                 numin1(3 downto 0)=>XLXN_14(3 downto 0),
                 numin2(3 downto 0)=>XLXN_15(3 downto 0),
                 numin3(3 downto 0)=>XLXN_16(3 downto 0),
@@ -171,7 +165,7 @@ begin
                 numin6(3 downto 0)=>XLXN_19(3 downto 0),
                 overin=>XLXN_13,
                 numout1(3 downto 0)=>XLXN_31(3 downto 0),
-                numout2(3 downto 0)=>XLXN_42(3 downto 0),
+                numout2(3 downto 0)=>XLXN_193(3 downto 0),
                 numout3(3 downto 0)=>XLXN_43(3 downto 0),
                 numout4(3 downto 0)=>XLXN_44(3 downto 0),
                 numout5(3 downto 0)=>XLXN_45(3 downto 0),
@@ -197,19 +191,19 @@ begin
                 dp3=>XLXN_52,
                 fref=>XLXN_6);
    
-   XLXI_10 : multi
+   XLXI_13 : multi
       port map (dp1=>XLXN_50,
                 dp2=>XLXN_51,
                 dp3=>XLXN_52,
-                fre0(3 downto 0)=>XLXI_10_fre0_openSignal(3 downto 0),
-                fre1(3 downto 0)=>XLXI_10_fre1_openSignal(3 downto 0),
-                fre2(3 downto 0)=>XLXI_10_fre2_openSignal(3 downto 0),
-                fre3(3 downto 0)=>XLXI_10_fre3_openSignal(3 downto 0),
-                fre4(3 downto 0)=>XLXI_10_fre4_openSignal(3 downto 0),
-                fre5(3 downto 0)=>XLXI_10_fre5_openSignal(3 downto 0),
+                fre1(3 downto 0)=>XLXN_31(3 downto 0),
+                fre2(3 downto 0)=>XLXN_193(3 downto 0),
+                fre3(3 downto 0)=>XLXN_43(3 downto 0),
+                fre4(3 downto 0)=>XLXN_44(3 downto 0),
+                fre5(3 downto 0)=>XLXN_45(3 downto 0),
+                fre6(3 downto 0)=>XLXN_46(3 downto 0),
                 f1khz=>XLXN_29,
                 q_over=>overout,
-                diq(7 downto 0)=>DIG(7 downto 0),
+                dig(7 downto 0)=>DIG(7 downto 0),
                 seg(7 downto 0)=>SEG(7 downto 0));
    
 end BEHAVIORAL;

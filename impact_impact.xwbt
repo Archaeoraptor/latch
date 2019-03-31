@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=F:\eelab\latch_test\impact.xsl
+OUTFILE=F:\eelab\latch_test\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=F:\eelab\latch_test
+LICENSE=iMPACT
+USER_INFO=iMPACT
