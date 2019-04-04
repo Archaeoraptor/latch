@@ -91,7 +91,7 @@ begin
 									when others=> dig_r<="11111111";
 								end case;
 					
-						elsif( dp1='1')then
+						else
 							case count is 
 								when "000"=>  dig_r<="11111110";
 								when "001"=>  dig_r<="11111101";
@@ -101,18 +101,18 @@ begin
 								when "101"=>  dig_r<="11111111";	
 								when others=> dig_r<="11111111";
 							end case;
-						else
-							case count is 
-								when "000"=>  dig_r<="11111110";
-								when "001"=>  dig_r<="11111101";
-								when "010"=>  dig_r<="11111011";
-								when "011"=>  dig_r<="11110111";
-								when "100"=>  dig_r<="11101111";
-								when "101"=>  dig_r<="11011111";
-								when "111"=>  dig_r<="11011111";
-								when others=> dig_r<="01111111";
-							end case;
-						end if;
+--						else
+--							case count is 
+--								when "000"=>  dig_r<="11111110";
+--								when "001"=>  dig_r<="11111101";
+--								when "010"=>  dig_r<="11111011";
+--								when "011"=>  dig_r<="11110111";
+--								when "100"=>  dig_r<="11101111";
+--								when "101"=>  dig_r<="11011111";
+--								when "111"=>  dig_r<="11011111";
+--								when others=> dig_r<="01111111";
+--  							end case;
+						 end if;
 					else
 						case count is 
 							when "000"=>  dig_r<="11111110";

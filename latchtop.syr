@@ -119,10 +119,10 @@ Architecture behavioral of Entity fdiv3 is up to date.
 Compiling vhdl file "F:/eelab/latch_test/sele.vhd" in Library work.
 Architecture behavioral of Entity sele is up to date.
 Compiling vhdl file "F:/eelab/latch_test/mutli.vhd" in Library work.
-Entity <multi> compiled.
-Entity <multi> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity multi is up to date.
 Compiling vhdl file "F:/eelab/latch_test/latchtop.vhf" in Library work.
-Architecture behavioral of Entity latchtop is up to date.
+Entity <latchtop> compiled.
+Entity <latchtop> (Architecture <behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -342,6 +342,7 @@ Optimizing unit <latch> ...
 
 Optimizing unit <multi> ...
 WARNING:Xst:1710 - FF/Latch <dig_r_6> (without init value) has a constant value of 1 in block <multi>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dig_r_7> (without init value) has a constant value of 1 in block <multi>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <counter6> ...
 
@@ -355,8 +356,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 94
- Flip-Flops                                            : 94
+# Registers                                            : 93
+ Flip-Flops                                            : 93
 
 =========================================================================
 
@@ -385,29 +386,28 @@ Design Statistics
 # IOs                              : 21
 
 Cell Usage :
-# BELS                             : 180
+# BELS                             : 172
 #      GND                         : 1
 #      INV                         : 8
 #      LUT1                        : 14
-#      LUT2                        : 10
-#      LUT2_L                      : 1
-#      LUT3                        : 37
+#      LUT2                        : 9
+#      LUT2_L                      : 2
+#      LUT3                        : 39
 #      LUT3_L                      : 5
-#      LUT4                        : 63
-#      LUT4_D                      : 1
+#      LUT4                        : 55
 #      LUT4_L                      : 2
 #      MUXCY                       : 14
-#      MUXF5                       : 8
+#      MUXF5                       : 7
 #      VCC                         : 1
 #      XORCY                       : 15
-# FlipFlops/Latches                : 94
+# FlipFlops/Latches                : 93
 #      FD                          : 31
 #      FDC                         : 1
 #      FDCE                        : 24
 #      FDE                         : 4
 #      FDR                         : 22
 #      FDR_1                       : 1
-#      FDS                         : 11
+#      FDS                         : 10
 # Clock Buffers                    : 3
 #      BUFG                        : 1
 #      BUFGP                       : 2
@@ -421,9 +421,9 @@ Device utilization summary:
 
 Selected Device : 3s250etq144-5 
 
- Number of Slices:                       80  out of   2448     3%  
- Number of Slice Flip Flops:             94  out of   4896     1%  
- Number of 4 input LUTs:                141  out of   4896     2%  
+ Number of Slices:                       76  out of   2448     3%  
+ Number of Slice Flip Flops:             93  out of   4896     1%  
+ Number of 4 input LUTs:                134  out of   4896     2%  
  Number of IOs:                          21
  Number of bonded IOBs:                  21  out of    108    19%  
  Number of GCLKs:                         3  out of     24    12%  
@@ -449,7 +449,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-XLXI_3/u1/clk                      | NONE(XLXI_3/u2/clk)    | 18    |
+XLXI_3/u1/clk                      | NONE(XLXI_3/u2/clk)    | 17    |
 XLXI_3/u2/clk                      | NONE(XLXI_3/u3/clk)    | 4     |
 XLXI_3/u3/clk                      | NONE(XLXI_3/u4/clk)    | 4     |
 CLK                                | BUFGP                  | 16    |
@@ -475,9 +475,9 @@ Timing Summary:
 Speed Grade: -5
 
    Minimum period: 5.044ns (Maximum Frequency: 198.240MHz)
-   Minimum input arrival time before clock: 5.123ns
-   Maximum output required time after clock: 7.042ns
-   Maximum combinational path delay: 8.659ns
+   Minimum input arrival time before clock: 5.894ns
+   Maximum output required time after clock: 7.035ns
+   Maximum combinational path delay: 8.463ns
 
 Timing Detail:
 --------------
@@ -485,10 +485,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'XLXI_3/u1/clk'
-  Clock period: 4.016ns (frequency: 249.004MHz)
-  Total number of paths / destination ports: 70 / 26
+  Clock period: 4.009ns (frequency: 249.426MHz)
+  Total number of paths / destination ports: 67 / 25
 -------------------------------------------------------------------------
-Delay:               4.016ns (Levels of Logic = 3)
+Delay:               4.009ns (Levels of Logic = 3)
   Source:            XLXI_13/count_0 (FF)
   Destination:       XLXI_13/fre_data_3 (FF)
   Source Clock:      XLXI_3/u1/clk rising
@@ -498,14 +498,14 @@ Delay:               4.016ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             25   0.514   1.223  XLXI_13/count_0 (XLXI_13/count_0)
+     FDR:C->Q             24   0.514   1.216  XLXI_13/count_0 (XLXI_13/count_0)
      LUT3:I0->O            1   0.612   0.000  XLXI_13/Mmux_fre_data_mux0001_6 (XLXI_13/Mmux_fre_data_mux0001_6)
      MUXF5:I1->O           1   0.278   0.509  XLXI_13/Mmux_fre_data_mux0001_5_f5 (XLXI_13/Mmux_fre_data_mux0001_5_f5)
      LUT4:I0->O            1   0.612   0.000  XLXI_13/count<2> (XLXI_13/fre_data_mux0001<0>)
      FD:D                      0.268          XLXI_13/fre_data_0
     ----------------------------------------
-    Total                      4.016ns (2.284ns logic, 1.732ns route)
-                                       (56.9% logic, 43.1% route)
+    Total                      4.009ns (2.284ns logic, 1.725ns route)
+                                       (57.0% logic, 43.0% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'XLXI_3/u2/clk'
@@ -590,7 +590,7 @@ Delay:               5.044ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDCE:C->Q             6   0.514   0.721  Csignal/U3/count_0 (Csignal/U3/count_0)
-     LUT4:I0->O            1   0.612   0.387  Csignal/over1_or000012_SW0 (N49)
+     LUT4:I0->O            1   0.612   0.387  Csignal/over1_or000012_SW0 (N55)
      LUT4:I2->O            7   0.612   0.605  Csignal/over1_or00001 (Csignal/carry3)
      LUT4:I3->O            4   0.612   0.499  Csignal/over1_or00002 (Csignal/carry4)
      FDCE:CE                   0.483          Csignal/U5/count_0
@@ -621,31 +621,32 @@ Delay:               2.006ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_3/u1/clk'
-  Total number of paths / destination ports: 21 / 5
+  Total number of paths / destination ports: 9 / 2
 -------------------------------------------------------------------------
-Offset:              5.123ns (Levels of Logic = 4)
-  Source:            s1 (PAD)
-  Destination:       XLXI_13/dig_r_5 (FF)
+Offset:              5.894ns (Levels of Logic = 5)
+  Source:            s10 (PAD)
+  Destination:       XLXI_13/dig_r_2 (FF)
   Destination Clock: XLXI_3/u1/clk rising
 
-  Data Path: s1 to XLXI_13/dig_r_5
+  Data Path: s10 to XLXI_13/dig_r_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            10   1.106   0.902  s1_IBUF (s1_IBUF)
-     LUT3:I0->O            4   0.612   0.502  XLXI_4/dp1_cmp_eq00001 (XLXN_50)
-     LUT4:I3->O            1   0.612   0.509  XLXI_13/dig_r_mux0013<2>23 (XLXI_13/dig_r_mux0013<2>23)
-     LUT4:I0->O            1   0.612   0.000  XLXI_13/dig_r_mux0013<2>471 (XLXI_13/dig_r_mux0013<2>47)
-     FDS:D                     0.268          XLXI_13/dig_r_5
+     IBUF:I->O             7   1.106   0.754  s10_IBUF (s10_IBUF)
+     LUT3:I0->O            2   0.612   0.532  XLXI_4/dp21 (XLXN_51)
+     LUT3:I0->O            1   0.612   0.360  XLXI_13/dig_r_mux0011<5>29_SW0 (N63)
+     LUT4:I3->O            1   0.612   0.426  XLXI_13/dig_r_mux0011<5>29 (XLXI_13/dig_r_mux0011<5>29)
+     LUT3:I1->O            1   0.612   0.000  XLXI_13/dig_r_mux0011<5>461 (XLXI_13/dig_r_mux0011<5>46)
+     FDS:D                     0.268          XLXI_13/dig_r_2
     ----------------------------------------
-    Total                      5.123ns (3.210ns logic, 1.913ns route)
-                                       (62.7% logic, 37.3% route)
+    Total                      5.894ns (3.822ns logic, 2.072ns route)
+                                       (64.8% logic, 35.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_3/u1/clk'
-  Total number of paths / destination ports: 45 / 15
+  Total number of paths / destination ports: 44 / 14
 -------------------------------------------------------------------------
-Offset:              7.042ns (Levels of Logic = 4)
+Offset:              7.035ns (Levels of Logic = 4)
   Source:            XLXI_13/count_0 (FF)
   Destination:       SEG<7> (PAD)
   Source Clock:      XLXI_3/u1/clk rising
@@ -654,14 +655,14 @@ Offset:              7.042ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             25   0.514   1.140  XLXI_13/count_0 (XLXI_13/count_0)
+     FDR:C->Q             24   0.514   1.133  XLXI_13/count_0 (XLXI_13/count_0)
      LUT4:I1->O            1   0.612   0.000  XLXI_13/seg_r_7_mux000670_SW01 (XLXI_13/seg_r_7_mux000670_SW0)
-     MUXF5:I1->O           1   0.278   0.360  XLXI_13/seg_r_7_mux000670_SW0_f5 (N57)
+     MUXF5:I1->O           1   0.278   0.360  XLXI_13/seg_r_7_mux000670_SW0_f5 (N61)
      LUT4:I3->O            1   0.612   0.357  XLXI_13/seg_r_7_mux000670 (SEG_7_OBUF)
      OBUF:I->O                 3.169          SEG_7_OBUF (SEG<7>)
     ----------------------------------------
-    Total                      7.042ns (5.185ns logic, 1.857ns route)
-                                       (73.6% logic, 26.4% route)
+    Total                      7.035ns (5.185ns logic, 1.850ns route)
+                                       (73.7% logic, 26.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'lch/t21'
@@ -688,7 +689,7 @@ Offset:              5.696ns (Levels of Logic = 3)
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 39 / 8
 -------------------------------------------------------------------------
-Delay:               8.659ns (Levels of Logic = 6)
+Delay:               8.463ns (Levels of Logic = 6)
   Source:            s1 (PAD)
   Destination:       SEG<7> (PAD)
 
@@ -696,27 +697,27 @@ Delay:               8.659ns (Levels of Logic = 6)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            10   1.106   0.902  s1_IBUF (s1_IBUF)
-     LUT3:I0->O            4   0.612   0.651  XLXI_4/dp1_cmp_eq00001 (XLXN_50)
+     IBUF:I->O             7   1.106   0.754  s1_IBUF (s1_IBUF)
+     LUT3:I0->O            3   0.612   0.603  XLXI_4/dp1_cmp_eq00001 (XLXN_50)
      LUT4:I0->O            1   0.612   0.000  XLXI_13/seg_r_7_mux000670_SW01 (XLXI_13/seg_r_7_mux000670_SW0)
-     MUXF5:I1->O           1   0.278   0.360  XLXI_13/seg_r_7_mux000670_SW0_f5 (N57)
+     MUXF5:I1->O           1   0.278   0.360  XLXI_13/seg_r_7_mux000670_SW0_f5 (N61)
      LUT4:I3->O            1   0.612   0.357  XLXI_13/seg_r_7_mux000670 (SEG_7_OBUF)
      OBUF:I->O                 3.169          SEG_7_OBUF (SEG<7>)
     ----------------------------------------
-    Total                      8.659ns (6.389ns logic, 2.270ns route)
-                                       (73.8% logic, 26.2% route)
+    Total                      8.463ns (6.389ns logic, 2.074ns route)
+                                       (75.5% logic, 24.5% route)
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.10 secs
+Total CPU time to Xst completion: 5.13 secs
  
 --> 
 
-Total memory usage is 269984 kilobytes
+Total memory usage is 269856 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
 Number of infos    :    2 (   0 filtered)
 

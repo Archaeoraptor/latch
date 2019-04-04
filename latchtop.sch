@@ -18,22 +18,9 @@
         <signal name="XLXN_50" />
         <signal name="XLXN_51" />
         <signal name="XLXN_52" />
-        <signal name="XLXN_53(7:0)" />
         <signal name="SEG(7:0)" />
         <signal name="DIG(7:0)" />
         <signal name="XLXN_70" />
-        <signal name="XLXN_71" />
-        <signal name="XLXN_73(3:0)" />
-        <signal name="XLXN_74(3:0)" />
-        <signal name="XLXN_87" />
-        <signal name="XLXN_91" />
-        <signal name="XLXN_119" />
-        <signal name="XLXN_120" />
-        <signal name="XLXN_124" />
-        <signal name="XLXN_138" />
-        <signal name="XLXN_139" />
-        <signal name="XLXN_140" />
-        <signal name="XLXN_144" />
         <signal name="CLKsignal" />
         <signal name="XLXN_13" />
         <signal name="overout" />
@@ -48,25 +35,7 @@
         <signal name="XLXN_16(3:0)" />
         <signal name="XLXN_15(3:0)" />
         <signal name="XLXN_14(3:0)" />
-        <signal name="XLXN_173(3:0)" />
-        <signal name="XLXN_174(3:0)" />
-        <signal name="XLXN_175(3:0)" />
-        <signal name="XLXN_176(3:0)" />
-        <signal name="XLXN_177(3:0)" />
-        <signal name="XLXN_178(3:0)" />
-        <signal name="XLXN_185" />
-        <signal name="XLXN_187" />
-        <signal name="XLXN_191" />
         <signal name="XLXN_193(3:0)" />
-        <signal name="XLXN_195" />
-        <signal name="XLXN_197(3:0)" />
-        <signal name="XLXN_198(3:0)" />
-        <signal name="XLXN_199(3:0)" />
-        <signal name="XLXN_200(3:0)" />
-        <signal name="XLXN_201(3:0)" />
-        <signal name="XLXN_202(3:0)" />
-        <signal name="XLXN_203" />
-        <signal name="XLXN_224" />
         <signal name="XLXN_225" />
         <signal name="XLXN_226" />
         <port polarity="Input" name="CLK" />
@@ -159,7 +128,7 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="multi">
-            <timestamp>2019-3-31T11:55:37</timestamp>
+            <timestamp>2019-4-1T7:39:8</timestamp>
             <rect width="64" x="0" y="404" height="24" />
             <line x2="0" y1="416" y2="416" x1="64" />
             <rect width="64" x="320" y="404" height="24" />
@@ -219,8 +188,8 @@
             <blockpin signalname="XLXN_43(3:0)" name="fre3(3:0)" />
             <blockpin signalname="XLXN_44(3:0)" name="fre4(3:0)" />
             <blockpin signalname="XLXN_45(3:0)" name="fre5(3:0)" />
-            <blockpin signalname="SEG(7:0)" name="seg(7:0)" />
             <blockpin signalname="XLXN_46(3:0)" name="fre6(3:0)" />
+            <blockpin signalname="SEG(7:0)" name="seg(7:0)" />
             <blockpin signalname="DIG(7:0)" name="dig(7:0)" />
         </block>
         <block symbolname="counter6" name="Csignal">
@@ -299,11 +268,6 @@
             <wire x2="1856" y1="736" y2="1120" x1="1856" />
             <wire x2="2032" y1="1120" y2="1120" x1="1856" />
         </branch>
-        <branch name="SEG(7:0)">
-            <wire x2="2880" y1="928" y2="928" x1="2416" />
-            <wire x2="2896" y1="928" y2="928" x1="2880" />
-        </branch>
-        <iomarker fontsize="28" x="2896" y="928" name="SEG(7:0)" orien="R0" />
         <branch name="CLKsignal">
             <wire x2="512" y1="1696" y2="1696" x1="384" />
         </branch>
@@ -402,5 +366,11 @@
         </branch>
         <instance x="2032" y="704" name="lch" orien="R0">
         </instance>
+        <branch name="SEG(7:0)">
+            <wire x2="2432" y1="928" y2="928" x1="2416" />
+            <wire x2="2880" y1="928" y2="928" x1="2432" />
+            <wire x2="2896" y1="928" y2="928" x1="2880" />
+        </branch>
+        <iomarker fontsize="28" x="2896" y="928" name="SEG(7:0)" orien="R0" />
     </sheet>
 </drawing>

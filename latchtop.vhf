@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 13.4
 --  \   \         Application : sch2hdl
 --  /   /         Filename : latchtop.vhf
--- /___/   /\     Timestamp : 03/31/2019 20:02:13
+-- /___/   /\     Timestamp : 04/01/2019 16:38:20
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="multi">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2019-3-31T12:48:19</timestamp>
+    <timestamp>2019-4-1T7:39:8</timestamp>
     <pin polarity="Input" x="0" y="-672" name="f1khz" />
     <pin polarity="Input" x="0" y="-608" name="q_over" />
     <pin polarity="Input" x="0" y="-544" name="dp1" />

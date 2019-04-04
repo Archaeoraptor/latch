@@ -129,8 +129,8 @@
     <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="multi.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="multi.xst"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
-    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/latchtop_synthesis.nlf"/>
-    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/latchtop_synthesis.vhd"/>
+    <file xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/latchtop_synthesis.nlf"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/latchtop_synthesis.vhd"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_2"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="sele.prj"/>
@@ -237,7 +237,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1554033734" xil_pn:in_ck="5612638218303967691" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-6630818071435554866" xil_pn:start_ts="1554033732">
+    <transform xil_pn:end_ts="1554282007" xil_pn:in_ck="5612638218303967691" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-6630818071435554866" xil_pn:start_ts="1554282005">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="latchtop.vhf"/>
@@ -262,7 +262,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1554038103" xil_pn:in_ck="6630226673173390477" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="1987248270925270960" xil_pn:start_ts="1554038095">
+    <transform xil_pn:end_ts="1554107909" xil_pn:in_ck="6630226673173390477" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="1987248270925270960" xil_pn:start_ts="1554107901">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -288,7 +288,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1554038114" xil_pn:in_ck="2979670189316341666" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2480459773264029760" xil_pn:start_ts="1554038109">
+    <transform xil_pn:end_ts="1554107914" xil_pn:in_ck="2979670189316341666" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2480459773264029760" xil_pn:start_ts="1554107909">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_ngo"/>
@@ -297,7 +297,7 @@
       <outfile xil_pn:name="latchtop.ngd"/>
       <outfile xil_pn:name="latchtop_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1554038118" xil_pn:in_ck="308538021642358865" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="8974719074496307082" xil_pn:start_ts="1554038114">
+    <transform xil_pn:end_ts="1554107917" xil_pn:in_ck="308538021642358865" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="8974719074496307082" xil_pn:start_ts="1554107914">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -313,7 +313,7 @@
       <outfile xil_pn:name="latchtop_summary.xml"/>
       <outfile xil_pn:name="latchtop_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1554038128" xil_pn:in_ck="-4846899784716046486" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3129755442398015208" xil_pn:start_ts="1554038118">
+    <transform xil_pn:end_ts="1554107927" xil_pn:in_ck="-4846899784716046486" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3129755442398015208" xil_pn:start_ts="1554107917">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -328,7 +328,7 @@
       <outfile xil_pn:name="latchtop_pad.txt"/>
       <outfile xil_pn:name="latchtop_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1554038159" xil_pn:in_ck="5612638218303962242" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1554038147">
+    <transform xil_pn:end_ts="1554107940" xil_pn:in_ck="5612638218303962242" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1554107927">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -343,7 +343,7 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1554038164" xil_pn:in_ck="5612638218303949388" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="1890673188639090495" xil_pn:start_ts="1554038164">
+    <transform xil_pn:end_ts="1554291959" xil_pn:in_ck="5612638218303949388" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="1890673188639090495" xil_pn:start_ts="1554291959">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -353,9 +353,11 @@
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="InputChanged"/>
     </transform>
-    <transform xil_pn:end_ts="1554038128" xil_pn:in_ck="1508050932362963405" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1554038125">
-      <status xil_pn:value="SuccessfullyRun"/>
+    <transform xil_pn:end_ts="1554104396" xil_pn:in_ck="1508050932362963405" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1554104393">
+      <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="latchtop.twr"/>
       <outfile xil_pn:name="latchtop.twx"/>

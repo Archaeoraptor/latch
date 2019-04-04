@@ -45,7 +45,7 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    4.042|         |         |         |
+CLK            |    4.232|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock CLKsignal
@@ -53,10 +53,10 @@ Clock to Setup on destination clock CLKsignal
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLKsignal      |    4.389|         |         |         |
-s1             |    8.245|         |         |         |
-s10            |    8.245|         |         |         |
-s100           |    8.245|         |         |         |
+CLKsignal      |    4.531|         |         |         |
+s1             |    8.050|         |         |         |
+s10            |    8.050|         |         |         |
+s100           |    8.050|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock s1
@@ -64,9 +64,9 @@ Clock to Setup on destination clock s1
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-s1             |    2.419|         |    2.014|         |
-s10            |    2.419|         |    2.014|         |
-s100           |    2.419|         |    2.014|         |
+s1             |    2.430|         |    1.981|         |
+s10            |    2.430|         |    1.981|         |
+s100           |    2.430|         |    1.981|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock s10
@@ -74,9 +74,9 @@ Clock to Setup on destination clock s10
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-s1             |    2.419|         |    2.014|         |
-s10            |    2.419|         |    2.014|         |
-s100           |    2.419|         |    2.014|         |
+s1             |    2.430|         |    1.981|         |
+s10            |    2.430|         |    1.981|         |
+s100           |    2.430|         |    1.981|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock s100
@@ -84,43 +84,43 @@ Clock to Setup on destination clock s100
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-s1             |    2.419|         |    2.014|         |
-s10            |    2.419|         |    2.014|         |
-s100           |    2.419|         |    2.014|         |
+s1             |    2.430|         |    1.981|         |
+s10            |    2.430|         |    1.981|         |
+s100           |    2.430|         |    1.981|         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-s1             |SEG<0>         |    9.213|
-s1             |SEG<1>         |   10.312|
-s1             |SEG<2>         |    9.419|
-s1             |SEG<3>         |   10.274|
-s1             |SEG<4>         |   10.966|
-s1             |SEG<5>         |   10.189|
-s1             |SEG<6>         |    9.619|
-s1             |SEG<7>         |   12.506|
-s10            |SEG<0>         |    9.184|
-s10            |SEG<1>         |   10.283|
-s10            |SEG<2>         |    9.390|
-s10            |SEG<3>         |   10.245|
-s10            |SEG<4>         |   10.937|
-s10            |SEG<5>         |   10.160|
-s10            |SEG<6>         |    9.590|
-s10            |SEG<7>         |   11.747|
-s100           |SEG<0>         |    8.852|
-s100           |SEG<1>         |    9.951|
-s100           |SEG<2>         |    9.058|
-s100           |SEG<3>         |    9.913|
-s100           |SEG<4>         |   10.605|
-s100           |SEG<5>         |    9.828|
-s100           |SEG<6>         |    9.258|
-s100           |SEG<7>         |   11.116|
+s1             |SEG<0>         |    9.481|
+s1             |SEG<1>         |   10.926|
+s1             |SEG<2>         |   10.046|
+s1             |SEG<3>         |   10.855|
+s1             |SEG<4>         |   11.296|
+s1             |SEG<5>         |   10.190|
+s1             |SEG<6>         |   10.421|
+s1             |SEG<7>         |   12.852|
+s10            |SEG<0>         |    9.569|
+s10            |SEG<1>         |   11.014|
+s10            |SEG<2>         |   10.134|
+s10            |SEG<3>         |   10.943|
+s10            |SEG<4>         |   11.384|
+s10            |SEG<5>         |   10.278|
+s10            |SEG<6>         |   10.509|
+s10            |SEG<7>         |   11.546|
+s100           |SEG<0>         |    8.768|
+s100           |SEG<1>         |   10.213|
+s100           |SEG<2>         |    9.333|
+s100           |SEG<3>         |   10.142|
+s100           |SEG<4>         |   10.583|
+s100           |SEG<5>         |    9.477|
+s100           |SEG<6>         |    9.708|
+s100           |SEG<7>         |   11.997|
 ---------------+---------------+---------+
 
 
-Analysis completed Sun Mar 31 21:15:27 2019 
+Analysis completed Mon Apr 01 15:39:54 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:
