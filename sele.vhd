@@ -35,7 +35,7 @@ entity sele is
 end sele;
 
 architecture Behavioral of sele is
- signal sel:std_logic_vector(2 downto 0);
+ signal sel:std_logic_vector(2 downto 0):="000";
 begin
  sel<=se100&se10&se1;
  process(sel,f1hz,f10hz,f100hz)is

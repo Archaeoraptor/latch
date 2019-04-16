@@ -108,6 +108,7 @@
     <file xil_pn:fileType="FILE_VHDL" xil_pn:name="latchtop_drc.vhf"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="latchtop_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="latchtop_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="latchtop_latchtop_sch_tb.fdo"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="latchtop_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="latchtop_map.mrp" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="latchtop_map.ncd" xil_pn:subbranch="Map"/>
@@ -162,13 +163,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1554006145" xil_pn:in_ck="6287947975320572141" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1554006145">
+    <transform xil_pn:end_ts="1554808160" xil_pn:in_ck="3756260012286894159" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1554808160">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Fdiv3.vhd"/>
       <outfile xil_pn:name="control.vhd"/>
       <outfile xil_pn:name="counter.vhd"/>
@@ -177,36 +174,29 @@
       <outfile xil_pn:name="latch.vhd"/>
       <outfile xil_pn:name="mutli.vhd"/>
       <outfile xil_pn:name="sele.vhd"/>
+      <outfile xil_pn:name="test_all.vhd"/>
       <outfile xil_pn:name="test_fdiv.vhd"/>
       <outfile xil_pn:name="test_fdiv3.vhd"/>
       <outfile xil_pn:name="test_latch.vhd"/>
+      <outfile xil_pn:name="test_multi.vhd"/>
       <outfile xil_pn:name="test_sel.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1554006145" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-3164414492177048063" xil_pn:start_ts="1554006145">
+    <transform xil_pn:end_ts="1554722316" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7008547105562564558" xil_pn:start_ts="1554722316">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1554006147" xil_pn:in_ck="5612638218303967691" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6957432147701304765" xil_pn:start_ts="1554006145">
+    <transform xil_pn:end_ts="1554722317" xil_pn:in_ck="5612638218303967691" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3580064356902571700" xil_pn:start_ts="1554722316">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="latchtop.vhf"/>
     </transform>
     <transform xil_pn:end_ts="1553915253" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="378160568416589139" xil_pn:start_ts="1553915253">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1554006147" xil_pn:in_ck="5281213961136194782" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1554006147">
+    <transform xil_pn:end_ts="1554808160" xil_pn:in_ck="3536674716261201792" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1554808160">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Fdiv3.vhd"/>
       <outfile xil_pn:name="control.vhd"/>
       <outfile xil_pn:name="counter.vhd"/>
@@ -216,20 +206,17 @@
       <outfile xil_pn:name="latchtop.vhf"/>
       <outfile xil_pn:name="mutli.vhd"/>
       <outfile xil_pn:name="sele.vhd"/>
+      <outfile xil_pn:name="test_all.vhd"/>
       <outfile xil_pn:name="test_fdiv.vhd"/>
       <outfile xil_pn:name="test_fdiv3.vhd"/>
       <outfile xil_pn:name="test_latch.vhd"/>
+      <outfile xil_pn:name="test_multi.vhd"/>
       <outfile xil_pn:name="test_sel.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1554006148" xil_pn:in_ck="5281213961136194782" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-4283535276088114188" xil_pn:start_ts="1554006147">
+    <transform xil_pn:end_ts="1554808161" xil_pn:in_ck="3536674716261201792" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-4283535276088114188" xil_pn:start_ts="1554808160">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="test_latch.fdo"/>
+      <outfile xil_pn:name="latchtop_latchtop_sch_tb.fdo"/>
       <outfile xil_pn:name="vsim.wlf"/>
       <outfile xil_pn:name="work"/>
     </transform>
@@ -266,7 +253,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
@@ -291,6 +280,7 @@
     <transform xil_pn:end_ts="1554107914" xil_pn:in_ck="2979670189316341666" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2480459773264029760" xil_pn:start_ts="1554107909">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="latchtop.bld"/>
@@ -301,6 +291,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -317,6 +308,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="latchtop.ncd"/>
       <outfile xil_pn:name="latchtop.pad"/>
@@ -328,10 +320,11 @@
       <outfile xil_pn:name="latchtop_pad.txt"/>
       <outfile xil_pn:name="latchtop_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1554107940" xil_pn:in_ck="5612638218303962242" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1554107927">
+    <transform xil_pn:end_ts="1554806958" xil_pn:in_ck="5612638218303962242" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1554806946">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
@@ -343,30 +336,32 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1554291959" xil_pn:in_ck="5612638218303949388" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="1890673188639090495" xil_pn:start_ts="1554291959">
+    <transform xil_pn:end_ts="1554806962" xil_pn:in_ck="5612638218303949388" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="1890673188639090495" xil_pn:start_ts="1554806962">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1554007891" xil_pn:in_ck="5612638218303949388" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1554007888">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1554104396" xil_pn:in_ck="1508050932362963405" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1554104393">
       <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="latchtop.twr"/>
       <outfile xil_pn:name="latchtop.twx"/>
     </transform>
-    <transform xil_pn:end_ts="1554033797" xil_pn:in_ck="-291570755760854313" xil_pn:name="TRAN_postSynthesisSimModel" xil_pn:prop_ck="-2042301449886221030" xil_pn:start_ts="1554033795">
+    <transform xil_pn:end_ts="1554806938" xil_pn:in_ck="-291570755760854313" xil_pn:name="TRAN_postSynthesisSimModel" xil_pn:prop_ck="-2042301449886221030" xil_pn:start_ts="1554806936">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="netgen"/>
       <outfile xil_pn:name="netgen/synthesis/latchtop_synthesis.nlf"/>
       <outfile xil_pn:name="netgen/synthesis/latchtop_synthesis.vhd"/>

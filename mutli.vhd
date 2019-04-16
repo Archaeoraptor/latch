@@ -39,10 +39,10 @@ entity multi is
 end multi;
 
 architecture Behavioral of multi is
-signal seg_r:STD_LOGIC_VECTOR(7 DOWNTO 0);
-signal dig_r:STD_LOGIC_VECTOR(7 DOWNTO 0);
-signal fre_data: STD_LOGIC_VECTOR(3 DOWNTO 0);
-signal count: std_logic_vector(2 downto 0);
+signal seg_r:STD_LOGIC_VECTOR(7 DOWNTO 0):="00000000";
+signal dig_r:STD_LOGIC_VECTOR(7 DOWNTO 0):="00000000";
+signal fre_data: STD_LOGIC_VECTOR(3 DOWNTO 0):="0000";
+signal count: std_logic_vector(2 downto 0):="000";
 begin
    process(f1khz)is
 	 begin

@@ -13,11 +13,57 @@
 # //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
 # //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
 # //
-# do {test_latch.fdo}
+# do {latchtop_latchtop_sch_tb.fdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 12:22:33 on Mar 31,2019
+# Start time: 19:09:26 on Apr 09,2019
+# vcom -reportprogress 300 -explicit -93 fdiv.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity fdiv
+# -- Compiling architecture Behavioral of fdiv
+# End time: 19:09:26 on Apr 09,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 19:09:27 on Apr 09,2019
+# vcom -reportprogress 300 -explicit -93 counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity counter
+# -- Compiling architecture Behavioral of counter
+# End time: 19:09:27 on Apr 09,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 19:09:27 on Apr 09,2019
+# vcom -reportprogress 300 -explicit -93 sele.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sele
+# -- Compiling architecture Behavioral of sele
+# End time: 19:09:28 on Apr 09,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 19:09:28 on Apr 09,2019
+# vcom -reportprogress 300 -explicit -93 mutli.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity multi
+# -- Compiling architecture Behavioral of multi
+# End time: 19:09:28 on Apr 09,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 19:09:28 on Apr 09,2019
 # vcom -reportprogress 300 -explicit -93 latch.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -26,46 +72,275 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity latch
 # -- Compiling architecture Behavioral of latch
-# End time: 12:22:33 on Mar 31,2019, Elapsed time: 0:00:00
+# End time: 19:09:29 on Apr 09,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 12:22:33 on Mar 31,2019
-# vcom -reportprogress 300 -explicit -93 test_latch.vhd 
+# Start time: 19:09:29 on Apr 09,2019
+# vcom -reportprogress 300 -explicit -93 Fdiv3.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity test_latch
-# -- Compiling architecture behavior of test_latch
-# ** Warning: test_latch.vhd(116): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: test_latch.vhd(117): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: test_latch.vhd(118): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: test_latch.vhd(119): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: test_latch.vhd(120): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: test_latch.vhd(121): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 12:22:34 on Mar 31,2019, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 6
-# vsim -gui -do "do {test_latch.fdo}" 
-# Start time: 12:22:34 on Mar 31,2019
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Fdiv3
+# -- Compiling architecture Behavioral of Fdiv3
+# End time: 19:09:29 on Apr 09,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 19:09:29 on Apr 09,2019
+# vcom -reportprogress 300 -explicit -93 counter6.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity counter6
+# -- Compiling architecture structure of counter6
+# End time: 19:09:30 on Apr 09,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 19:09:30 on Apr 09,2019
+# vcom -reportprogress 300 -explicit -93 control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity control
+# -- Compiling architecture Behavioral of control
+# End time: 19:09:30 on Apr 09,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 19:09:30 on Apr 09,2019
+# vcom -reportprogress 300 -explicit -93 latchtop.vhf 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package VCOMPONENTS
+# -- Compiling entity latchtop
+# -- Compiling architecture BEHAVIORAL of latchtop
+# End time: 19:09:31 on Apr 09,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 19:09:35 on Apr 09,2019
+# vcom -reportprogress 300 -explicit -93 test_all.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package VCOMPONENTS
+# -- Compiling entity latchtop_latchtop_sch_tb
+# -- Compiling architecture behavioral of latchtop_latchtop_sch_tb
+# End time: 19:09:36 on Apr 09,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -gui -do "do {latchtop_latchtop_sch_tb.fdo}" 
+# Start time: 19:09:36 on Apr 09,2019
 # ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.test_latch(behavior)
+# Loading ieee.numeric_std(body)
+# Loading unisim.vcomponents
+# Loading work.latchtop_latchtop_sch_tb(behavioral)
+# Loading work.latchtop(behavioral)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
+# Loading work.counter6(structure)
+# Loading work.counter(behavioral)
+# Loading work.control(behavioral)
 # Loading work.latch(behavioral)
+# Loading work.fdiv3(behavioral)
+# Loading work.fdiv(behavioral)
+# Loading work.sele(behavioral)
+# Loading work.multi(behavioral)
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Administrator  Hostname: WIN-A331-24  ProcessID: 3312
 # 
-#           Attempting to use alternate WLF file "./wlftt3nick".
+#           Attempting to use alternate WLF file "./wlfteq9jg2".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftt3nick
+#           Using alternate file: ./wlfteq9jg2
 # 
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# End time: 12:23:35 on Mar 31,2019, Elapsed time: 0:01:01
-# Errors: 0, Warnings: 3
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 7500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 9500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 11500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 12500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 13500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 14500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 16500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 17500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 18500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 19500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 22500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 23500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 24500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 25500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 26500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 27500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 28500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 29500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 31500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 32500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 33500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 34500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 35500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 36500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 37500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 38500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 39500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 40500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 41500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 42500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 43500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 44500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 45500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 46500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 47500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 48500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 49500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 51500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 52500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 53500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 54500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 55500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 56500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 57500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 58500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 59500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 60500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 61500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 62500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 63500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 64500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 65500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 66500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 67500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 68500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 69500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 71500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 72500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 73500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 74500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 75500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 76500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 77500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 78500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 79500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 80500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 81500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 82500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 83500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 84500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 85500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 86500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 87500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 88500010 ns  Iteration: 4  Instance: /latchtop_latchtop_sch_tb/UUT/XLXI_13
