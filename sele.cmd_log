@@ -1,7 +1,0 @@
-vhdtdtfi -lib work sele.vhd -prj latch_test -o sele.spl -module sele -template C:/Xilinx/13.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan3e sele.spl F:/eelab/latch_test/sele.sym 
-vhdtdtfi -prj latch_test -o F:/eelab/latch_test/sele.vhi -module sele -template C:/Xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work sele.vhd 
-vhdtdtfi -lib work sele.vhd -prj latch_test -o sele.spl -module sele -template C:/Xilinx/13.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan3e sele.spl F:/eelab/latch_test/sele.sym 
-vhdtdtfi -lib work sele.vhd -prj latch_test -o sele.spl -module sele -template C:/Xilinx/13.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan3e sele.spl F:/eelab/latch_test/sele.sym 

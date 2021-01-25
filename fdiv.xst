@@ -1,5 +1,0 @@
-set -tmpdir "F:/eelab/latch_test/xst/projnav.tmp"
-set -xsthdpdir "F:/eelab/latch_test/xst"
-elaborate
--ifn fdiv.prj
--ifmt mixed
