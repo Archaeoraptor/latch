@@ -1,7 +1,0 @@
-[Inputs]
-bsignal
-[Outputs]
-gate
-reset
-latch
-[BiDir]
