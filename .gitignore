@@ -2,7 +2,7 @@
 !/scripts
 !/testbenches
 !.gitignore
-!Readme
+!README.md
 !LICENSE
 !*.vhd
 !*.mif
